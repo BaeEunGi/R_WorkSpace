@@ -1,0 +1,5 @@
+DF_body <- read.csv('student_body.csv')
+View(DF_body)
+table(DF_body$Grade,DF_body$BloodType)
+prop.table(table(DF_body$Grade,DF_body$BloodType))
+barplot(table(DF_body$BloodType,DF_body$Grade),legend = TRUE)
